@@ -37,4 +37,8 @@ if ($uri === "/") {
      $ProductController->productForm();
 }elseif($uri === "/productProcess"){
      $ProductController->product();
+}elseif($uri === "/listProduct"){
+    $ProductController->productView();
+}elseif($uri === "/singleProduct"){
+    $ProductController->singleProductView();
 }

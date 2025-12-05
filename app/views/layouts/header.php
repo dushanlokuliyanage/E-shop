@@ -65,6 +65,10 @@
                         <button type="submit" class="me-2 btn btn-outline-success  btn-sm">Add Product</button>
                     </form>
 
+                    <form action="/listProduct">
+                        <button type="submit" class="me-2 btn btn-outline-primary  btn-sm">List Product</button>
+                    </form>
+
                     <form action="/logout">
                         <button type="submit" class="me-2 btn btn-outline-dark hide btn-sm" id="logoutBtn">Logout</button>
                     </form>

@@ -1,0 +1,6 @@
+.hide {
+  display: none;
+}
+.bg-gradient-custom {
+    background: linear-gradient(45deg, #fff8ff, #fffac1);
+}

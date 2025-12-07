@@ -41,4 +41,6 @@ if ($uri === "/") {
     $ProductController->productView();
 }elseif($uri === "/singleProduct"){
     $ProductController->singleProductView();
+}elseif($uri === "/productUpdate"){
+     $ProductController->updateProdutDatails();
 }

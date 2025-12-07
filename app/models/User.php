@@ -27,7 +27,7 @@ class User
     {
         $stmt = $this->pdo->prepare("SELECT COUNT(*) FROM `user` WHERE `email` = ?");
         $stmt->execute([$email]);
-        return $stmt->fetchColumn() > 0;
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
     public function getUserByEmail($email)
@@ -79,8 +79,8 @@ class User
     public function update($userData)
     {
         $stmt = $this->pdo->prepare("UPDATE `user` SET `firstName` = ? , `lastName`=?, `email`=?, `phoneNumber`=?, `gender`=? , `address`=? WHERE `id` = ? ");
-   
-      return $stmt->execute([
+
+        return $stmt->execute([
             $userData['firstName'],
             $userData['lastName'],
             $userData['email'],
@@ -90,16 +90,5 @@ class User
             $userData['id'],
 
         ]);
-   
     }
-
-
-
-
-
-
-
-
-
-    
 }

@@ -1,3 +1,10 @@
+<?php 
+if(!isset($_SESSION['user'])){
+    header("Location: /register");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

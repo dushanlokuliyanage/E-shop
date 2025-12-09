@@ -61,8 +61,17 @@ class Product
             $proData['des'],
             $proData['qty'],
             $proData['price'],
-            $proData['image'], 
-            $proData['id'],    
+            $proData['image'],
+            $proData['id'],
         ]);
+    }
+
+    public function deleteProduct($proData)
+    {
+
+        $stmt = $this->pdo->prepare("DELETE FROM `product` WHERE `id` = :id");
+
+        $stmt->bindParam(':id', $proData['id']);
+        return $stmt->execute();
     }
 }

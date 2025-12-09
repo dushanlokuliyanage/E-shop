@@ -43,4 +43,8 @@ if ($uri === "/") {
     $ProductController->singleProductView();
 }elseif($uri === "/productUpdate"){
      $ProductController->updateProdutDatails();
+} elseif ($uri === "/deleteProduct") {
+    $ProductController->deleteProductForm();
+} elseif ($uri === "/deleteProductProcess"){
+        $ProductController->deleteProduct();
 }

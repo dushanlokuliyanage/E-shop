@@ -16,11 +16,11 @@
 
 <body>
 
-    <h2 style="color:green"> Your account has been deleted successfully.Thank you for Used Us !</h2>
+    <h2 style="color:green"> Your product has been deleted successfully.</h2>
 
     <script>
         setTimeout(function() {
-            window.location.href = "/deleteProcess";
+            window.location.href = "/deleteProductProcess";
         }, 2000);
     </script>
 
